@@ -1,37 +1,31 @@
 # aula1-fundamentos
 
-<!--
-  Este arquivo entra na janela de contexto do Claude Code em TODA sessão neste projeto.
-  Ele é curto de propósito: cada linha aqui custa token em cada turno.
-  No LAB 3 você completa os TODOs abaixo. Quando terminar, apague os comentários e os TODOs.
-  Referência: https://code.claude.com/docs/en/memory
--->
-
 ## O que é este projeto
 
 Campo de treino da Aula 1 (Fundamentos) da Especialização em IA da PDA.
-Projeto Node pequeno com funções utilitárias em `src/` e testes em `tests/`.
+Projeto Node pequeno com funções utilitárias em `src/` (`validaCpf`, `formataPreco`, `fetchUsuario`) e especificação em `tests/`.
 
 ## Stack
 
-- TODO: linguagem e versão (dica: `node -v`)
-- TODO: como os módulos são importados (ESM ou CommonJS? olhe o `package.json`)
-- TODO: qual runner de testes (dica: olhe o script `test` do `package.json`)
+- Node.js 20+ (JavaScript moderno)
+- Módulos ES Modules (`"type": "module"` no `package.json`)
+- Runner de testes nativo do Node (`node --test` com `node:assert/strict`)
 
 ## Comandos
 
-- TODO: comando pra rodar os testes
-- TODO: comando pra rodar os testes em watch
+- Rodar todos os testes: `npm test` (executa `node --test`)
+- Rodar os testes em modo watch: `npm run test:watch` (executa `node --test --watch`)
 
 ## Regras
 
-- Os arquivos em `tests/` são a especificação. **Nunca edite testes** pra fazê-los passar.
-- TODO: escreva a regra "sempre rode os testes antes de dizer que terminou" com as suas palavras
-- TODO: uma regra sua sobre estilo (ex.: `const` em vez de `let`, sem `==`, mensagens de erro em português…)
+- Os arquivos em `tests/` são a especificação. **Nunca edite arquivos em `tests/`** para fazê-los passar.
+- Sempre execute `npm test` antes de declarar uma tarefa como concluída e só finalize com 100% dos testes verdes.
+- Use `const` por padrão (evite `let` quando desnecessário), comparação estrita (`===` / `!==`), `parseInt(valor, 10)` sempre com radix explícito e mensagens de erro descritivas em português.
+- Valide entradas (tipo, formato e limites) no início da função antes de executar efeitos colaterais ou chamadas de rede.
 
 ## Como eu quero trabalhar com você
 
-- Antes de editar, explique em 1–2 frases o que vai mudar e por quê.
-- Mudanças pequenas e focadas. Uma tarefa por vez.
-- Se não tiver certeza sobre uma API ou lib, consulte a documentação (MCP context7) em vez de chutar.
-- TODO: adicione uma preferência sua
+- Antes de editar qualquer arquivo, explique em 1–2 frases o que vai mudar e por quê.
+- Faça mudanças pequenas e focadas, resolvendo uma tarefa por vez.
+- Se não tiver certeza sobre uma API ou biblioteca, consulte a documentação via MCP (`context7`) em vez de adivinhar.
+- Ao corrigir bugs apontados por testes, verifique também casos de borda similares no mesmo arquivo sem alterar a assinatura pública esperada.
