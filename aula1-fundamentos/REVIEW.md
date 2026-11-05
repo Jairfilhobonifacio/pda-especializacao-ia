@@ -66,3 +66,9 @@ Corpo (opcional, 2-3 bullets):
 - validar id positivo antes do fetch, checar resposta.ok e tratar campos ausentes em fetchUsuario
 - completar CLAUDE.md e adicionar skill gerar-commit-convencional
 ```
+
+## Checklist de Entrega
+- [x] CLAUDE.md completo sem TODO
+- [x] Skill gerar-commit-convencional em .claude/skills/
+- [x] validaCpf e fetchUsuario passando nos 13 testes sem editar tests/
+- [x] Prints jairfilho_skills.png e jairfilho_sessao-completa.png
